@@ -39,8 +39,6 @@ RUN echo "terminal:butterfly" | chpasswd
 USER terminal
 ENV HOME /home/terminal
 
-ADD docker/run.sh /home/terminal/run.sh
-
 EXPOSE 57575
 
-CMD ["/home/terminal/run.sh"]
+CMD ["/home/terminal/app/docker/run.sh"]
